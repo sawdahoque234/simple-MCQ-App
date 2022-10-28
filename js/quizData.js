@@ -1,4 +1,4 @@
-[
+const quizData = [
   {
     title: "What is the past form of 'eat'?",
     options: ["eat", "ate", "eaten", "have ate"],
@@ -95,3 +95,4 @@
     answer: "I will have been eating rice for 1 year",
   },
 ];
+export default quizData;
