@@ -1,0 +1,174 @@
+/* importing google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&family=Rosario&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+h1 {
+  margin: 30px;
+}
+h2 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  margin: 30px;
+}
+h3 {
+  margin: 20px;
+  font-weight: 300;
+  font-size: 22px;
+}
+.btn {
+  width: 228px;
+  height: 56px;
+  left: 1067px;
+  top: 140px;
+  color: white;
+  font-size: 20px;
+  background: #000000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.mcq-info {
+  width: 435px;
+  height: 563px;
+  top: 90px;
+  position: absolute;
+  margin: auto 570px;
+  display: block;
+  background: #ffffff;
+  box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* start-index-page */
+main {
+  width: 100vw;
+  height: 100vh;
+  background: #e0cabc;
+}
+.wrapper {
+  align-items: center;
+  display: flex;
+  margin: auto;
+}
+
+.home-left-side img {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+}
+
+.title {
+  position: absolute;
+  width: 398.67px;
+  height: 61.25px;
+  left: 860px;
+  font-family: Rosario sans-serif !important;
+  top: 120px;
+  font-size: 40px;
+  text-align: center;
+}
+.home-right-side {
+  position: absolute;
+  width: 600px;
+  height: 250px;
+  right: 200px;
+  top: 220px;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+/* End--index-page */
+
+/* Start-MCQ-PAge */
+body {
+  background: #b0b8ff;
+}
+.header {
+  position: absolute;
+  width: 703px;
+  height: 100px;
+  left: 400px;
+  top: 50px;
+  background: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.timer {
+  width: 385px;
+  height: 49px;
+  left: 621px;
+  top: 140px;
+  align-items: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: #000000;
+}
+
+.mcq-card {
+  position: relative;
+  width: 703px;
+  left: 400px;
+  height: 250px;
+  margin-bottom: 30px;
+  top: 190px;
+  display: flex;
+  background: #ffffff;
+  border-radius: 20px;
+}
+.mcq-card span {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  font-size: 30px;
+  background: #ffffff;
+}
+.mcq-qsn h4 {
+  padding-top: 15px;
+  font-weight: 700;
+  font-size: 25px;
+  margin-left: 55px;
+  color: #000000;
+  text-align: left;
+}
+
+.option ul li {
+  list-style: none;
+  padding-top: 20px;
+  margin-left: 60px;
+  font-size: 20px;
+  align-items: center;
+}
+.option ul input {
+  margin: 0 10px 0 0;
+  width: 20px;
+  height: 20px;
+  border: 5px solid #e90808;
+}
+/* End-MCQ-Page */
+
+/* start-result-page */
+.result-page {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(269.85deg, #ffdf64 0.12%, #f4d456 99.86%);
+}
+
+.result-page img {
+  margin: auto;
+  display: block;
+}
+
+.timeout-page {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(269.85deg, #ff646d 0.12%, #f45656 99.86%);
+}
