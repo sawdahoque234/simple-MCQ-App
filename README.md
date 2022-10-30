@@ -86,7 +86,7 @@ const startMCQ = () => {
 - For getting answer first i delare an empty array globally for answerquestion 
 - Here i push only checjed value
 - if answerquestion data and item's answer match then MCQ point will increment (item means mcq)
-- ``` html
+ ``` html
 let answeredQuestion = [];
 // collected data from mcq
 const collectedResult = () => {
@@ -99,6 +99,7 @@ const collectedResult = () => {
     answeredQuestion.push(data);
   });
 };
+
 //Get result from answeredQuestion array
 // and calculate mcq point
 const getResult = () => {
