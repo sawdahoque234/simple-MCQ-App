@@ -30,9 +30,19 @@ https://user-images.githubusercontent.com/75621881/198892712-1cc48c54-137c-40b8-
 - Add style.css for css design
 ### style.css
 - Here i reuse some design like button...etc
+### mcqData.js
+ - Here i store all the mcqData
 ### Page.js
 - Here firstly i created an object with all page information(pageName,pageDisplay,address) like json data
 - After that i create two function show and display.
    - i.if pageDisplay = true, then the page will be diplayed that means display block otherwise display none.Default false.
 ### Element.js
--
+- Here i create a elementCreate function for globally
+- elementCreate function is a Blue print funtion for element creation which function will return a new element
+```html
+const elementCreate = (tagName, nameOfclass) => {
+  const newElement = document.createElement(tagName);
+  newElement.className += nameOfclass;
+  return newElement;
+};
+```
