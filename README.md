@@ -23,5 +23,16 @@ https://user-images.githubusercontent.com/75621881/198892712-1cc48c54-137c-40b8-
 - He have to answer all the questions within 10 Minutes.
 - When time finished he automatically redirect timeout page
 
-
-
+## Description
+### index.html 
+- Here I've created seapatre sections for different pages
+- Add script.js file and also declare type is module
+- Add style.css for css design
+### style.css
+- Here i reuse some design like button...etc
+### Page.js
+- Here firstly i created an object with all page information(pageName,pageDisplay,address) like json data
+- After that i create two function show and display 
+   i.if pageDisplay = true, then the page will be diplayed that means display block otherwise display none.Default false.
+### Element.js
+-
