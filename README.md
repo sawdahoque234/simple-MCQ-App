@@ -37,8 +37,8 @@ https://user-images.githubusercontent.com/75621881/198892712-1cc48c54-137c-40b8-
 - After that i create two function show and display.
    - i.if pageDisplay = true, then the page will be diplayed that means display block otherwise display none.Default false.
 ### Element.js
-- Here i create a elementCreate function for globally
-- elementCreate function is a Blue print funtion for element creation which function will return a new element
+- Here i create a elementCreate function for globally.elementCreate function is a Blue print funtion for element creation which function will return a new element
+- For this function can avoid repitation of element creation
 ```html
 const elementCreate = (tagName, nameOfclass) => {
   const newElement = document.createElement(tagName);
@@ -46,3 +46,116 @@ const elementCreate = (tagName, nameOfclass) => {
   return newElement;
 };
 ```
+- Then i create mcq question that means i wanted to show the MCQ Creation using js not using direct html
+
+### script.js
+- Here firstly i import all data and function from other js file
+- Then i delare some global variable and firstly we show the startpage which i declare as a index
+```html
+let pageName = "index";
+
+const start = () => {
+  show(pageName);
+  display();
+  submit.onclick = calculateResult;
+  startBtn.onclick = startMCQ;
+  startAgain.onclick = index;
+  fStartAgain.onclick = index;
+};
+
+window.onload = start;
+
+```
+- Then using forEach function i display all mca
+```html
+//here mcq comes from element.js file
+// load mcq get value from mcqdata
+//which will be displayed
+//here mcqCard is single mcq-qsn
+const startMCQ = () => {
+  pageName = "mcq";
+  mcqData.forEach((value, index) => {
+    const mcqCard = mcq(index + 1, value);
+    mcqSection.appendChild(mcqCard);
+  });
+  
+  start();
+};
+```
+- Then i want to findout the answer and score.
+- For getting answer first i delare an empty array globally for answerquestion 
+- Here i push only checjed value
+- if answerquestion data and item's answer match then MCQ point will increment (item means mcq)
+- ``` html
+let answeredQuestion = [];
+// collected data from mcq
+const collectedResult = () => {
+  mcqData.forEach((item, index) => {
+    // only checked value will be collected
+    // and push it into answeredQuestion array
+    let data = document.querySelector(
+      `input[name="${item.title}"]:checked`
+    ).value;
+    answeredQuestion.push(data);
+  });
+};
+//Get result from answeredQuestion array
+// and calculate mcq point
+const getResult = () => {
+  mcqData.forEach((item, i) => {
+    if (answeredQuestion[i] === item.answer) {
+      mcqPoint += 1;
+    }
+  });
+};
+```
+- Then calculate mcq Score here default score is 0
+```html
+let mcqPoint = 0;
+// Result calculation
+const calculateResult = () => {
+  collectedResult();
+  getResult();
+  score.innerHTML = `${mcqPoint} out of ${mcqData.length}`;
+  pageName = "result";
+  start();
+};
+```
+- For timer i use setInterval function
+
+```html
+const countDown = () => {
+  setInterval(() => {
+    document.getElementById("timer").innerHTML = `0${minute} : ${sec}`;
+    sec--;
+    if (sec < 10) {
+      document.getElementById("timer").innerHTML = `0${minute} :0${sec}`;
+    }
+    if (sec === 0) {
+      if (minute === 0) {
+        pageName = "timeout";
+        start();
+      }
+      sec = 59;
+      minute--;
+    }
+  }, 1000);
+};
+ ```
+ -Firstly i used this condtion to show the two digit like 01.02...
+ ```html
+ if (sec < 10) {
+      document.getElementById("timer").innerHTML = `0${minute} :0${sec}`;
+    }
+             ```
+             
+             
+- When click start button thn,everytime  it's open a new mcq  page.
+```html
+// reload index page again
+const index = () => {
+  pageName = "index";
+  window.location.reload();
+};
+```
+
