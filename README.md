@@ -66,7 +66,7 @@ const start = () => {
 window.onload = start;
 
 ```
-- Then using forEach function i display all mca
+- Then using forEach function i display all mcq
 ```html
 //here mcq comes from element.js file
 // load mcq get value from mcqdata
