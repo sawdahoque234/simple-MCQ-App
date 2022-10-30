@@ -147,10 +147,11 @@ const countDown = () => {
  if (sec < 10) {
       document.getElementById("timer").innerHTML = `0${minute} :0${sec}`;
     }
-             ```
+  ```
              
              
 - When click start button thn,everytime  it's open a new mcq  page.
+
 ```html
 // reload index page again
 const index = () => {
