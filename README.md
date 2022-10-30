@@ -142,7 +142,7 @@ const countDown = () => {
   }, 1000);
 };
  ```
- -Firstly i used this condtion to show the two digit like 01.02...
+ -Firstly i used this condtion to show the two digit until 09 like 01,02...
  ```html
  if (sec < 10) {
       document.getElementById("timer").innerHTML = `0${minute} :0${sec}`;
