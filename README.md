@@ -10,3 +10,8 @@
 ![a333](https://user-images.githubusercontent.com/75621881/198891936-7118394c-1833-4ad8-b255-b96c401bfff7.png)
 ## 4.Timeout Page
 ![aa111](https://user-images.githubusercontent.com/75621881/198892092-a049d9a2-2308-4094-aa07-5143360713be.png)
+
+ ### when time is Finished is automatically shown timeoutpage
+ 
+https://user-images.githubusercontent.com/75621881/198892247-cb5adee0-a0ed-4d15-8f40-cc8f4c48f42c.mp4
+
