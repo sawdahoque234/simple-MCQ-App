@@ -1,8 +1,11 @@
 # Simple-MCQ-App 
 ## [Live Site](https://sawda-hoque-mcq-app.netlify.app/)
-
+## Language and Tools
+- HTML
+- CSS
+- JS
+- Netlify(deploy)
 ## 1.Start-Page
-
 ![a](https://user-images.githubusercontent.com/75621881/198891713-6dd2bc8d-0bc7-40a0-91f0-9e238e33ae95.png)
 ## 2.MCQ Page
 ![a1](https://user-images.githubusercontent.com/75621881/198891813-06bcd42b-3491-4634-8943-9a3e100e6dd4.png)
@@ -13,4 +16,12 @@
 
  ### when time is Finished is automatically shown timeoutpage
 https://user-images.githubusercontent.com/75621881/198892712-1cc48c54-137c-40b8-ab18-c185ce3a1328.mp4
+
+## Functionality
+- When user click on the start button he can view MCQ page.
+- He have to must checked all the MCQ otherwise he can not see the result page
+- He have to answer all the questions within 10 Minutes.
+- When time finished he automatically redirect timeout page
+
+
 
