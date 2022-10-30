@@ -8,7 +8,8 @@
     <title>MCQ TEST</title>
   </head>
   <body>
-    <main>
+    <!-- startpage -->
+    <main class="index">
       <div class="wrapper">
         <div class="home-left-side">
           <img src="./assets/home.png" alt="" />
@@ -18,13 +19,44 @@
           <div class="home-right-side">
             <h2>Total Questions 10 in 10 Minute</h2>
             <h3>MCQ about Tense (English 2nd Paper)</h3>
-            <a href="/mcq.html"> <button class="btn">START</button></a>
+            <button id="startMCQ" class="btn">START</button>
           </div>
         </div>
       </div>
     </main>
-    <!-- mcq... -->
-    <section id="quizSection"></section>
+
+    <!-- mcqpage -->
+    <section class="mcq">
+      <div>
+        <div class="header">
+          <p class="timer">Remaining Time: <span id="timer"></span></p>
+          <button id="finish" class="btn">Finish</button>
+        </div>
+        <!-- allmcq -->
+        <div class="mcqSection"></div>
+      </div>
+    </section>
+    <!-- resultpage -->
+    <section class="result">
+      <div class="result-page">
+        <div class="mcq-info">
+          <img src="./assets/congrats.png" alt="" />
+          <h1>MCQ Result</h1>
+          <h3 id="score"></h3>
+          <button class="btn" id="startAgain">START AGAIN</button>
+        </div>
+      </div>
+    </section>
+    <!-- timeoutpage -->
+    <section class="time-out">
+      <div class="timeout-page">
+        <div class="mcq-info">
+          <img src="./assets/stopwatch.png" alt="" />
+          <h1>Time Out</h1>
+          <button class="btn" id="fStartAgain">START AGAIN</button>
+        </div>
+      </div>
+    </section>
 
     <script src="./js/script.js" type="module"></script>
   </body>

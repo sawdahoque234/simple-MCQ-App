@@ -31,6 +31,11 @@ h3 {
   border-radius: 5px;
   cursor: pointer;
 }
+.btn:hover {
+  background-color: rgb(10, 222, 151);
+  border: none;
+  transition: 0.5s ease-in-out;
+}
 .mcq-info {
   width: 435px;
   height: 563px;
@@ -43,6 +48,18 @@ h3 {
   border-radius: 20px;
   text-align: center;
 }
+.index {
+  display: none;
+}
+.mcq {
+  display: none;
+}
+.result {
+  display: none;
+}
+.time-out {
+  display: none;
+}
 
 /* start-index-page */
 main {
@@ -50,6 +67,7 @@ main {
   height: 100vh;
   background: #e0cabc;
 }
+
 .wrapper {
   align-items: center;
   display: flex;
@@ -90,17 +108,19 @@ body {
   background: #b0b8ff;
 }
 .header {
-  position: absolute;
+  position: sticky;
+  z-index: 1;
   width: 703px;
   height: 100px;
   left: 400px;
-  top: 50px;
+  top: 40px;
   background: #ffffff;
   border-radius: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 .timer {
   width: 385px;
   height: 49px;
@@ -118,8 +138,8 @@ body {
   width: 703px;
   left: 400px;
   height: 250px;
-  margin-bottom: 30px;
-  top: 190px;
+  margin-bottom: 38px;
+  top: 90px;
   display: flex;
   background: #ffffff;
   border-radius: 20px;
@@ -127,9 +147,14 @@ body {
 .mcq-card span {
   position: absolute;
   top: 10px;
-  left: 30px;
+  left: 20px;
   font-size: 30px;
   background: #ffffff;
+}
+.mcq-card span::after {
+  content: ".";
+  color: black;
+  font-weight: bold;
 }
 .mcq-qsn h4 {
   padding-top: 15px;
