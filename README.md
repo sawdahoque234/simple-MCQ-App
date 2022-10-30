@@ -33,6 +33,6 @@ https://user-images.githubusercontent.com/75621881/198892712-1cc48c54-137c-40b8-
 ### Page.js
 - Here firstly i created an object with all page information(pageName,pageDisplay,address) like json data
 - After that i create two function show and display.
-   ####i.if pageDisplay = true, then the page will be diplayed that means display block otherwise display none.Default false.
+   - i.if pageDisplay = true, then the page will be diplayed that means display block otherwise display none.Default false.
 ### Element.js
 -
